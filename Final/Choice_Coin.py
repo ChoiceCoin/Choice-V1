@@ -39,7 +39,7 @@ def create_asset():
 	params = algod_client.suggested_params()
 	transaction = AssetConfigTxn(creator_address, params, **asset_details)
 	signature = transaction.sign(creator_key)
-    #Signs the transaction with the sender's private key
+    	#Signs the transaction with the sender's private key
 	algod_client.send_transaction(signature)
 	transaction_id = transaction.get_txid()
 	transaction_id = str(transaction_id)
