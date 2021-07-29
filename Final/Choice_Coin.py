@@ -1,3 +1,5 @@
+###NOT FOR LAUNCH
+
 #This code defines an asset creation process on the Algorand Blockchain. 
 #It is configured to create Choice Coin, however, the asset_details may be altered.
 
