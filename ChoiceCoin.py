@@ -33,6 +33,11 @@ asset_details = {
 }
 
 
+# Split files below into two seperate files
+# One file will focus on launch
+# Democratic participation won't be in the initial launch code
+# Democratic participation will be better handled mannually
+############################
 
  #Available once create_choice is run
 metadata_file = "Choice.jpg"
@@ -51,7 +56,8 @@ def init_democratic_participation():
     parameters = algod_client.suggested_params()
     choice_trade(fund_address,fund_key,participation_awards,500000000,asset_id,'Initial Democratic Participation Rewards')
 
-
+# This is not secure because 'Evidence of electoral participation' is ambiguous
+# This will be a mannual add on
 def democratic_awards(query,address):
     if query == 'Evidence of electoral participation':
         comment = 'Here is your Choice Coin Reward. \n Thanks for voting!'
