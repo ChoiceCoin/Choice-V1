@@ -15,13 +15,12 @@ algod_client = algod.AlgodClient(algod_token,algod_address,headers)
 creator_address = "" #Put in main creator address here. This is the account that you want to be the manager of the asset.
 creator_mnemonic = "" #Put in main creator mnemonic here.
 creator_key = mnemonic.to_private_key(creator_mnemonic)
-freeze_address = ''
-clawback_address = ''
+compliance_address = ''
 #Details of the asset creation transaction.
 #Alter these details as you wish. 
 #Keep the manager, reserve, freeze, and clawback address the same as these point back to the variable defined at the beginning.
 asset_details = {
-	"asset_name": "ChoiceCoin",
+	"asset_name": "Choice Coin",
 	"unit_name": "Choice",
 	"total": 10000000000,
 	"decimals": 2,
