@@ -72,3 +72,4 @@ def create_choice():
 	print("Your transaction information is at https://testnet.algoexplorer.io/tx/" + transaction_id)
   #This gets the transaction id and then prints it on the console. The transaction is on AlgoExplorer, a block-explorer for Algorand.
   #AlgoExplorer is also the official block-explorer for Choice Coin as well.
+
