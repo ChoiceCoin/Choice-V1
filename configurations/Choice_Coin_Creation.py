@@ -1,3 +1,6 @@
+# Copyright Fortior Blockchain, LLLP 2021
+# Apache License
+
 from algosdk import account, encoding, mnemonic,algod
 from algosdk.future.transaction import AssetTransferTxn, PaymentTxn, AssetConfigTxn
 from algosdk.future.transaction import AssetFreezeTxn
@@ -11,7 +14,6 @@ from algosdk.v2client import algod
 #AssetConfigTxn function is used to create Choice Coin as a new Algorand-Standard-Asset on the network.
 
 
-
 algod_address = "" 
 algod_token = ""
 #The algod_address and algod_token are unique variables that allow developers to connect to the Algorand Blockchain.
@@ -22,20 +24,7 @@ algod_client = algod.AlgodClient(algod_token,algod_address,headers)
 creator_address = "" #This is the address that deploys Choice Coin to the Algorand Blockchain.
 creator_mnemonic = "" 
 creator_key = mnemonic.to_private_key(creator_mnemonic)
-#This is the private key of the creator address, and is used to sign the configuration transaction.
-freeze_address = ""
-clawback_address = ""
-freeze_mnemonic = ""
-freeze_key = mnemonic.to_private_key(freeze_mnemonic)
-clawback_mnemonic = ""
-clawback_key = mnemonic.to_private_key(clawback_mnemonic)
 
-#The Freeze and Clawback Addresses are used to execute specifc functions on Algorand's Network.
-#The Freeze Address is allowed to freeze another account's Choice Coin.
-#The Clawback Address is allowed to send another accounts Choice Coin back to the Reserve Address.
-#Both of these functions will only be executed in cases of legitimate criminal activity occuring on
-#Choice Coin's network. This will allow Choice Coin to preserve the safety of the network and protect it
-#from illegal activity as defined by a government or some other authority.
 
 #Asset Configuration details for Choice Coin
 asset_details = {
@@ -46,16 +35,9 @@ asset_details = {
 	"default_frozen": False, #Sets default frozen to false for accounts, allowing them to transact freely.
 	"manager": creator_address, #Defines the manager of Choice Coin, an address which is allowed to change the freeze and clawback functionality.
 	"reserve": creator_address, #Reserve Address. Determines where all the Choice Coin is stored upon creation.
-	"freeze": freeze_address, #Freeze Address
-	"clawback": clawback_address, #Clawback Address
+	"compliance": compliance_address, 
 	"url": "https://fortiorblockchain.com/", #URL for Choice Coin website; allows users to find out more about the asset.
 }
-
-
-
-
-
-
 
 #The asset_details are used in Choice Coin's initial creation, defined below
 def create_choice():
