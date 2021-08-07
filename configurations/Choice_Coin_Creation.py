@@ -13,7 +13,6 @@ from algosdk.v2client import algod
 #create smart contracts, and develop assets on the Algorand Blockchain. Specifcally, the 
 #AssetConfigTxn function is used to create Choice Coin as a new Algorand-Standard-Asset on the network.
 
-
 algod_address = "" 
 algod_token = ""
 #The algod_address and algod_token are unique variables that allow developers to connect to the Algorand Blockchain.
@@ -24,6 +23,7 @@ algod_client = algod.AlgodClient(algod_token,algod_address,headers)
 creator_address = "" #This is the address that deploys Choice Coin to the Algorand Blockchain.
 creator_mnemonic = "" 
 creator_key = mnemonic.to_private_key(creator_mnemonic)
+compliance_address = ""
 
 
 #Asset Configuration details for Choice Coin
@@ -35,7 +35,8 @@ asset_details = {
 	"default_frozen": False, #Sets default frozen to false for accounts, allowing them to transact freely.
 	"manager": creator_address, #Defines the manager of Choice Coin, an address which is allowed to change the freeze and clawback functionality.
 	"reserve": creator_address, #Reserve Address. Determines where all the Choice Coin is stored upon creation.
-	"compliance": compliance_address, 
+	"clawback": compliance_address, 
+	"freeze": compliance_address, 
 	"url": "https://fortiorblockchain.com/", #URL for Choice Coin website; allows users to find out more about the asset.
 }
 
