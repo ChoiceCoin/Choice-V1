@@ -35,8 +35,8 @@ asset_details = {
 	"default_frozen": False, #Sets default frozen to false for accounts, allowing them to transact freely.
 	"manager": creator_address, #Defines the manager of Choice Coin, an address which is allowed to change the freeze and clawback functionality.
 	"reserve": creator_address, #Reserve Address. Determines where all the Choice Coin is stored upon creation.
-	"clawback": compliance_address, 
 	"freeze": compliance_address, 
+	"clawback": compliance_address, 
 	"url": "https://fortiorblockchain.com/", #URL for Choice Coin website; allows users to find out more about the asset.
 }
 
