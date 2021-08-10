@@ -40,18 +40,18 @@ def init_democratic_participation():
 def democratic_awards(query,address):
     if query == 'Evidence of electoral participation':
         comment = 'Here is your Choice Coin Reward. \n Thanks for your help!'
-        reward_amount = 5000
+        reward_amount = "Value"
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
     elif query == 'Letter to local legistature':
         comment = 'Here is your Choice Coin Reward. \n Thanks for sending a letter to your local government'
-        reward_amount = 10000
+        reward_amount = "Value"
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
     elif query == 'Running in local government':
         comment = "Here is your Choice Coin Reward. \n Congrats on running in local government! Good Luck!"
-        reward_amount = 50000
+        reward_amount = "Value"
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
     else:
         comment = "Here is you Choice Coin Reward! \n Thanks for participating in our democracy!"
-        reward_amount = 1000
+        reward_amount = "Value"
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
 
