@@ -46,10 +46,6 @@ def democratic_awards(query,address):
         comment = 'Here is your Choice Coin Reward. \n Thanks for sending a letter to your local government'
         reward_amount = "Value"
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
-    elif query == 'Running in local government':
-        comment = "Here is your Choice Coin Reward. \n Congrats on running in local government! Good Luck!"
-        reward_amount = "Value"
-        choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
     else:
         comment = "Here is you Choice Coin Reward! \n Thanks for participating in our democracy!"
         reward_amount = "Value"
