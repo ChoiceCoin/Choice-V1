@@ -34,7 +34,7 @@ def choice_trade(sender, key, receiver, amount, index,comment):
 
 def init_democratic_participation():
     parameters = algod_client.suggested_params()
-    choice_trade(reserve_address,reserve_key,participation_awards,1200000000,asset_id,'Initial Democratic Participation Rewards')
+    choice_trade(reserve_address,reserve_key,participation_awards,"Value",asset_id,'Initial Democratic Participation Rewards')
 
 
 def democratic_awards(query,address):
