@@ -40,10 +40,10 @@ def init_democratic_participation():
 def democratic_awards(query,address):
     if query == 'Letter to local legistature':
         comment = 'Here is your Choice Coin Reward. \n Thanks for sending a letter to your local government'
-        reward_amount = "Value"
+        reward_amount = ""#Amount of Reward
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
     else:
         comment = "Here is you Choice Coin Reward! \n Thanks for participating in our democracy!"
-        reward_amount = "Value"
+        reward_amount = ""#Amount of Reward
         choice_trade(fund_address, fund_key, address, reward_amount, asset_id,comment)
 
