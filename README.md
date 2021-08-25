@@ -1,6 +1,6 @@
 # Choice Coin V1
 
-This Repository provides code and documentation detailing Choice Coin V1, a utility token built on the Algorand Blockchain. Choice Coin is a democratic token meant to be used for decentralized voting and democratic participation. Integrating next-generation technologies built by Fortior Blockchain, Choice Coin uses advanced software to promote democracy and equality. 
+This Repository provides code and documentation detailing Choice Coin V1, a utility token built on the Algorand Blockchain. Choice Coin is a democratic token meant to be used for decentralized voting and democratic participation. Integrating next-generation technologies built by Fortior Blockchain, Choice Coin uses advanced software to promote decentralized democracy. 
 
 # Algogeneous Smart Contracts
 
