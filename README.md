@@ -8,7 +8,7 @@ Algogeneous Smart Contracts represent a technical convergence of stateless and s
 
 # Fortior Voting Protocol
 
-Choice Coin leverages the Fortior Voting Protocol, a unique decentralized voting mechanism created on the Algorand Blockchain, to allow elections to be conducted in a decentralized fashion. Specifically, Choice Coin serves as an asset-base for tokenizing votes on the Algorand Blockchain. For example, the 2020 United States Presidential Election, if conducted through the Fortior Voting Protocol, would have had used an asset such as "Choice Coin 2020 Election" to represent each individual vote on as a digital token. The Fortior Voting Protocol priortizes both security and efficiency by storing all voter information in a database secured by post-quantum cryptography, and storing all assets in an escrow account to minimize transaction fees.
+Choice Coin leverages the Fortior Voting Protocol, a unique decentralized voting mechanism created on the Algorand Blockchain, to allow elections to be conducted in a decentralized fashion. Specifically, Choice Coin serves as an asset-base for tokenizing votes on the Algorand Blockchain. For example, the 2020 United States Presidential Election, if conducted through the Fortior Voting Protocol, would have had used an asset such as "Choice Coin 2020 Election" to represent each individual vote on as a digital token. The Fortior Voting Protocol priortizes both security and efficiency by storing all voter's information in a database secured by post-quantum cryptography, and storing all assets in an escrow account to minimize transaction fees.
 
 # License
 Copyright Fortior Blockchain, LLLP 2021
