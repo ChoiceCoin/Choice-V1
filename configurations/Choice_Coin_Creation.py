@@ -37,7 +37,7 @@ asset_details = {
 	"reserve": creator_address, #Reserve Address. Determines where all the Choice Coin is stored upon creation.
 	"freeze": compliance_address, 
 	"clawback": compliance_address, 
-	"url": "https://fortiorblockchain.com/", #URL for Choice Coin website; allows users to find out more about the asset.
+	"url": "https://choice-coin.com/", #URL for Choice Coin website; allows users to find out more about the asset.
 }
 
 #The asset_details are used in Choice Coin's initial creation, defined below
