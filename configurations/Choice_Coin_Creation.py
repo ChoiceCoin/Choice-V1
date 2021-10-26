@@ -35,12 +35,12 @@ asset_details = {
 	"default_frozen": False, #Sets default frozen to false for accounts, allowing them to transact freely.
 	"manager": creator_address, #Defines the manager of Choice Coin, an address which is allowed to change the freeze and clawback functionality.
 	"reserve": creator_address, #Reserve Address. Determines where all the Choice Coin is stored upon creation.
-	"freeze": compliance_address, 
+	"freeze": compliance_address, #The Compliance Address initally defines an address which is allowed to execute compliance measures for the Choice Coin Asset.
 	"clawback": compliance_address, 
 	"url": "https://choice-coin.com/", #URL for Choice Coin website; allows users to find out more about the asset.
 }
 
-#The asset_details are used in Choice Coin's initial creation, defined below
+#The asset_details are used in Choice Coin's initial creation, defined above. 
 def create_choice():
 	params = algod_client.suggested_params() 
   #This sets parameters for the Asset Configuration Transaction based on Algorand's protocols.
