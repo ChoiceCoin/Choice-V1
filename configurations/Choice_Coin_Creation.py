@@ -55,4 +55,16 @@ def create_choice():
 	print("Your transaction information is at https://testnet.algoexplorer.io/tx/" + transaction_id)
   #This gets the transaction id and then prints it on the console. The transaction is on AlgoExplorer, a block-explorer for Algorand.
   #AlgoExplorer is also the official block-explorer for Choice Coin as well.
+	
+
+def choice_modify():
+	params = algod_client.suggested_params()
+	transaction = AssetConfigTxn(creator_address, params, index = asset_id, manager = creator_address, reserve = creator_address, freeze = "", clawback = "", strict_empty_address_check = False)
+	signature = transaction.sign(creator_key)
+    #Signs the transaction with the sender's private key
+	algod_client.send_transaction(signature)
+	transaction_id = transaction.get_txid()
+	transaction_id = str(transaction_id)
+	print("Your transaction information is at https://testnet.algoexplorer.io/tx/" + transaction_id)
+
 
