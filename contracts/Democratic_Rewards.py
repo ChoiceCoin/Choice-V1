@@ -1,6 +1,6 @@
 #Stateless Smart Contracts on the Algorand Blockhain to send rewards for Democratic Participation.
 #Choice Coin seeks to provide rewards to its community for participating in their local democracy.
-#The inagaural democratic rewards program will focus on the advocacy for blockchain and cryptocurrency acceptance.
+#The inaugural democratic rewards program will focus on the advocacy for blockchain and cryptocurrency acceptance.
 
   
 from algosdk import account, encoding, mnemonic,transaction
